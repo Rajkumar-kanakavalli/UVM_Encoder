@@ -1,0 +1,390 @@
+# vsim encoder7 -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 14:46:31 on Aug 23,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt7
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.encoder7(fast)
+# Loading work.encoder_dut(fast)
+# Loading work.encoder_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon1.sv Line: 20
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon2.sv Line: 20
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave -position insertpoint  \
+sim:/encoder7/vif/din \
+sim:/encoder7/vif/y
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sivag  Hostname: DESKTOP-TH1P4EE  ProcessID: 9540
+#           Attempting to use alternate WLF file "./wlft3qi42x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3qi42x
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO scoreboard.sv(41) @ 12: uvm_test_top.env.scb [SCB: DATA MISMATCHED] din=128,din=0, dut y=7, ref y=0
+# UVM_INFO scoreboard.sv(41) @ 24: uvm_test_top.env.scb [SCB: DATA MISMATCHED] din=8,din=2, dut y=3, ref y=1
+# UVM_INFO scoreboard.sv(37) @ 36: uvm_test_top.env.scb [SCB: DATA MATCHED] din=2,din=2, dut y=1, ref y=1
+# UVM_INFO scoreboard.sv(37) @ 48: uvm_test_top.env.scb [SCB: DATA MATCHED] din=32,din=32, dut y=5, ref y=5
+# UVM_INFO scoreboard.sv(37) @ 60: uvm_test_top.env.scb [SCB: DATA MATCHED] din=32,din=32, dut y=5, ref y=5
+# UVM_INFO scoreboard.sv(41) @ 72: uvm_test_top.env.scb [SCB: DATA MISMATCHED] din=64,din=128, dut y=6, ref y=7
+# UVM_INFO scoreboard.sv(41) @ 84: uvm_test_top.env.scb [SCB: DATA MISMATCHED] din=16,din=2, dut y=4, ref y=1
+# UVM_INFO scoreboard.sv(37) @ 96: uvm_test_top.env.scb [SCB: DATA MATCHED] din=32,din=32, dut y=5, ref y=5
+# UVM_INFO scoreboard.sv(37) @ 108: uvm_test_top.env.scb [SCB: DATA MATCHED] din=64,din=64, dut y=6, ref y=6
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 110: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   11
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [SCB: DATA MATCHED]     5
+# [SCB: DATA MISMATCHED]     4
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 110 ns  Iteration: 54  Instance: /encoder7
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 14:51:15 on Aug 23,2022
+# vlog -reportprogress 300 top.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface encoder_intf
+# -- Compiling module encoder_dut
+# -- Compiling module encoder7
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# 
+# Top level modules:
+# 	encoder7
+# End time: 14:51:16 on Aug 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 14:51:16 on Aug 23,2022, Elapsed time: 0:04:45
+# Errors: 0, Warnings: 4
+# vsim encoder7 -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 14:51:16 on Aug 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.encoder7(fast)
+# Loading work.encoder_dut(fast)
+# Loading work.encoder_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon1.sv Line: 20
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon2.sv Line: 20
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave -position insertpoint  \
+sim:/encoder7/vif/din \
+sim:/encoder7/vif/y
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sivag  Hostname: DESKTOP-TH1P4EE  ProcessID: 9540
+#           Attempting to use alternate WLF file "./wlftjt063h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjt063h
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO scoreboard.sv(37) @ 5: uvm_test_top.env.scb [SCB: DATA MATCHED] din=0,din=0, dut y=0, ref y=0
+# UVM_INFO scoreboard.sv(37) @ 10: uvm_test_top.env.scb [SCB: DATA MATCHED] din=128,din=128, dut y=7, ref y=7
+# UVM_INFO scoreboard.sv(37) @ 15: uvm_test_top.env.scb [SCB: DATA MATCHED] din=2,din=2, dut y=1, ref y=1
+# UVM_INFO scoreboard.sv(37) @ 20: uvm_test_top.env.scb [SCB: DATA MATCHED] din=8,din=8, dut y=3, ref y=3
+# UVM_INFO scoreboard.sv(37) @ 25: uvm_test_top.env.scb [SCB: DATA MATCHED] din=64,din=64, dut y=6, ref y=6
+# UVM_INFO scoreboard.sv(37) @ 30: uvm_test_top.env.scb [SCB: DATA MATCHED] din=8,din=8, dut y=3, ref y=3
+# UVM_INFO scoreboard.sv(37) @ 35: uvm_test_top.env.scb [SCB: DATA MATCHED] din=2,din=2, dut y=1, ref y=1
+# UVM_INFO scoreboard.sv(37) @ 40: uvm_test_top.env.scb [SCB: DATA MATCHED] din=64,din=64, dut y=6, ref y=6
+# UVM_INFO scoreboard.sv(37) @ 45: uvm_test_top.env.scb [SCB: DATA MATCHED] din=32,din=32, dut y=5, ref y=5
+# UVM_INFO scoreboard.sv(37) @ 50: uvm_test_top.env.scb [SCB: DATA MATCHED] din=4,din=4, dut y=2, ref y=2
+# UVM_INFO scoreboard.sv(37) @ 55: uvm_test_top.env.scb [SCB: DATA MATCHED] din=32,din=32, dut y=5, ref y=5
+# UVM_INFO scoreboard.sv(37) @ 60: uvm_test_top.env.scb [SCB: DATA MATCHED] din=4,din=4, dut y=2, ref y=2
+# UVM_INFO scoreboard.sv(37) @ 65: uvm_test_top.env.scb [SCB: DATA MATCHED] din=128,din=128, dut y=7, ref y=7
+# UVM_INFO scoreboard.sv(37) @ 70: uvm_test_top.env.scb [SCB: DATA MATCHED] din=64,din=64, dut y=6, ref y=6
+# UVM_INFO scoreboard.sv(37) @ 75: uvm_test_top.env.scb [SCB: DATA MATCHED] din=2,din=2, dut y=1, ref y=1
+# UVM_INFO scoreboard.sv(37) @ 80: uvm_test_top.env.scb [SCB: DATA MATCHED] din=16,din=16, dut y=4, ref y=4
+# UVM_INFO scoreboard.sv(37) @ 85: uvm_test_top.env.scb [SCB: DATA MATCHED] din=64,din=64, dut y=6, ref y=6
+# UVM_INFO scoreboard.sv(37) @ 90: uvm_test_top.env.scb [SCB: DATA MATCHED] din=128,din=128, dut y=7, ref y=7
+# UVM_INFO scoreboard.sv(37) @ 95: uvm_test_top.env.scb [SCB: DATA MATCHED] din=32,din=32, dut y=5, ref y=5
+# UVM_INFO scoreboard.sv(37) @ 100: uvm_test_top.env.scb [SCB: DATA MATCHED] din=4,din=4, dut y=2, ref y=2
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 101: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   22
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [SCB: DATA MATCHED]    20
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 101 ns  Iteration: 54  Instance: /encoder7
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+quit -sim
+# End time: 15:24:57 on Aug 23,2022, Elapsed time: 0:33:41
+# Errors: 0, Warnings: 4
+cd {D:\UVM\KRK_sram_uvm}
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 15:25:09 on Aug 23,2022
+# vlog -reportprogress 300 top.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface sram_intf
+# -- Compiling module sram_dut
+# -- Compiling module sram_top7
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# 
+# Top level modules:
+# 	sram_top7
+# End time: 15:25:10 on Aug 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim sram_top7 -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 15:25:10 on Aug 23,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.sram_top7(fast)
+# Loading work.sram_dut(fast)
+# Loading work.sram_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon1.sv Line: 20
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon2.sv Line: 20
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave -position insertpoint  \
+sim:/sram_top7/vif/clk \
+sim:/sram_top7/vif/rst \
+sim:/sram_top7/vif/wr \
+sim:/sram_top7/vif/din \
+sim:/sram_top7/vif/addr \
+sim:/sram_top7/vif/dout
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test sram_inc_addr_test...
+# UVM_INFO mon2.sv(31) @ 5: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 5: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 5: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 15: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =   0, ref dout =  0
+# UVM_INFO mon2.sv(31) @ 25: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 25: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 25: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 35: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =   0, ref dout =  0
+# UVM_INFO mon2.sv(31) @ 45: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 45: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 45: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 55: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =   3, ref dout =  3
+# UVM_INFO mon2.sv(31) @ 65: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 65: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 65: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 75: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =   3, ref dout =  3
+# UVM_INFO mon2.sv(31) @ 85: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 85: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 85: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 95: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  95, ref dout = 95
+# UVM_INFO mon2.sv(31) @ 105: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 105: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 105: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 115: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  95, ref dout = 95
+# UVM_INFO mon2.sv(31) @ 125: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 125: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 125: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 135: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  48, ref dout = 48
+# UVM_INFO mon2.sv(31) @ 145: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 145: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 145: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 155: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  48, ref dout = 48
+# UVM_INFO mon2.sv(31) @ 165: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 165: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 165: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 175: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 170, ref dout =170
+# UVM_INFO mon2.sv(31) @ 185: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 185: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 185: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 195: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 170, ref dout =170
+# UVM_INFO mon2.sv(31) @ 205: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 205: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 205: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 215: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 124, ref dout =124
+# UVM_INFO mon2.sv(31) @ 225: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 225: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 225: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 235: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 124, ref dout =124
+# UVM_INFO mon2.sv(31) @ 245: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 245: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 245: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 255: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 249, ref dout =249
+# UVM_INFO mon2.sv(31) @ 265: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 265: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 265: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 275: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 249, ref dout =249
+# UVM_INFO mon2.sv(31) @ 285: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 285: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 285: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 295: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 198, ref dout =198
+# UVM_INFO mon2.sv(31) @ 305: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 305: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 305: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 315: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 198, ref dout =198
+# UVM_INFO mon2.sv(31) @ 325: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 325: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 325: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 335: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 195, ref dout =195
+# UVM_INFO mon2.sv(31) @ 345: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 345: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 345: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 355: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 195, ref dout =195
+# UVM_INFO mon2.sv(31) @ 365: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 365: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 365: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 375: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 126, ref dout =126
+# UVM_INFO mon2.sv(31) @ 385: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 385: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 385: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 395: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 126, ref dout =126
+# UVM_INFO mon2.sv(31) @ 405: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 405: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 405: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 415: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 154, ref dout =154
+# UVM_INFO mon2.sv(31) @ 425: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 425: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 425: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 435: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 154, ref dout =154
+# UVM_INFO mon2.sv(31) @ 445: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 445: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 445: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 455: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  61, ref dout = 61
+# UVM_INFO mon2.sv(31) @ 465: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 465: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 465: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 475: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  61, ref dout = 61
+# UVM_INFO mon2.sv(31) @ 485: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 485: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 485: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 495: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  88, ref dout = 88
+# UVM_INFO mon2.sv(31) @ 505: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 505: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 505: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 515: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  88, ref dout = 88
+# UVM_INFO mon2.sv(31) @ 525: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 525: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 525: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 535: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 246, ref dout =246
+# UVM_INFO mon2.sv(31) @ 545: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 545: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 545: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 555: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 246, ref dout =246
+# UVM_INFO mon2.sv(31) @ 565: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 565: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 565: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 575: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 197, ref dout =197
+# UVM_INFO mon2.sv(31) @ 585: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 585: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 585: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 595: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout = 197, ref dout =197
+# UVM_INFO mon2.sv(31) @ 605: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 605: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 605: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO scoreboard.sv(37) @ 615: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  70, ref dout = 70
+# UVM_INFO mon2.sv(31) @ 625: uvm_test_top.env.agent2.mon2 [mon2] mon2 transactions
+# UVM_INFO driver.sv(39) @ 625: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO mon1.sv(33) @ 625: uvm_test_top.env.agent1.mon1 [mon1] mon1 transactions
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 635: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO scoreboard.sv(37) @ 635: uvm_test_top.env.scb [SCB: DATA MATCHED] dut dout =  70, ref dout = 70
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  130
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Driver]    32
+# [RNTST]     1
+# [SCB: DATA MATCHED]    32
+# [TEST_DONE]     1
+# [mon1]    32
+# [mon2]    32
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 635 ns  Iteration: 54  Instance: /sram_top7
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 17:03:53 on Aug 23,2022, Elapsed time: 1:38:43
+# Errors: 0, Warnings: 2
